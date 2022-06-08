@@ -43,11 +43,10 @@ body {
 }
 
 .dpmenu ul{
-    margin-left: 0px;
     font-size: 18px;
     list-style-type: none;
     padding:0;
-    justify-content: right;
+    justify-content: center;
 
 }
 
@@ -56,14 +55,14 @@ body {
 }
 .dpmenu ul li {
     display: inline-block;
-    position:relative;
+    position: relative;
 
 }
 
 .dpmenu ul li a {
     color:hsl(0, 0%, 100%);
     text-decoration: none;
-    display: inline-block;
+    display: block;
     padding: 10px;
 }
 
@@ -76,21 +75,33 @@ body {
 /*---------------------------------Sub menu----------------------------------------------------*/
 
 .dpmenu ul ul{
+    width:200%;
     display: none;
     left: 0;
-    position: relative;
+    position: absolute;
+    background-color: #2d2d2d;
+    font-size: 16px;;
+}
+
+.dpmenu ul ul li a:hover {
+    width: 100%;
+    background-color:#4e4e4e;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .dpmenu ul li:hover ul{
-    display: inline;
+    display: block;
+    background-color:#424242;
 }
 
 .dpmenu ul ul {
-    width: 150px;
+    width: 150%;
 }
 
 .dpmenu ul ul li a{
-    display:inline;
+    display:block;
+    color:rgb(255, 255, 255);
 }
 
 
@@ -408,4 +419,3 @@ footer img {
 .infos h3 {
     margin-top: 10px;
 }
-
