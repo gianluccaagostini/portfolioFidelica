@@ -44,7 +44,7 @@ body {
 
 .dpmenu ul{
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 18px;
     list-style-type: none;
     padding:0;
     justify-content: right;
@@ -148,6 +148,7 @@ body {
     align-items: center;
     justify-content: center;
     vertical-align: top;
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
 }
 
 .slider input {
@@ -155,17 +156,16 @@ body {
 }
 
 .slider label {
-    align-items: center;
-    justify-content: center;
     background-color: #000;
-    bottom: 20px;
     border-radius: 20px;
     cursor: pointer;
     display: inline-block;
     height: 10px;
-    position: absolute;
+    position: relative;
     width: 10px;
     z-index: 10;
+    margin-left: 400px;
+    margin-top: 15px;
 }
 
 .slider li:nth-child(1) label {
@@ -192,16 +192,18 @@ body {
 }
 
 .sobrenos {
-    background-color: rgb(255, 255, 255);
+    background-color: #e2e2e2;
     width:905px;
     height:600px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin-left: 200px;
+    margin: 50px 200px 50px;
 }
 
 .sobrenos h2 {
+    color:hsl(0, 0%, 0%);
     align-items: center;
     font-size: 50px;
     text-align: center;
@@ -209,14 +211,138 @@ body {
 }
 
 .sobrenos p {
+    color:hsl(0, 0%, 0%);
     font-family: Helvetica;
     font-style: normal;
     line-height: 35px;
     word-spacing: 8px;
     align-items: center;
-    font-size: 20px;
-    text-align: justify-all;
+    font-size: 18px;
+    text-align: justify;
     padding: 20px;
+}
+
+.cardbaixo {
+    display: flex;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 400px;
+    left: 200px;
+}
+
+.card1 {
+    align-items: center;
+    justify-content: center;
+    width:33%;
+    height: 400px;
+    border-radius: 20px;
+    margin:5px;
+    background-color: #44a9fc;
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
+}
+
+.card1 img {
+    margin: 50px 80px 50px 80px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 h2 {
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+}
+
+.card1 p {
+    width:80%;
+    margin:0px 30px 10px 30px;
+    font-family: helvetica;
+    align-items: center;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.card2 {
+    align-items: center;
+    justify-content: center;
+    width:33%;
+    height: 400px;
+    border-radius: 20px;
+    margin:5px;
+    background-color: #f49fd5;
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
+}
+
+.card2 img {
+    margin: 50px 80px 50px 80px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card2 h2 {
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+}
+
+.card2 p {
+    width:80%;
+    margin:0px 30px 10px 30px;
+    font-family: helvetica;
+    align-items: center;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.card3 {
+    align-items: center;
+    justify-content: center;
+    width:33%;
+    height: 400px;
+    border-radius: 20px;
+    margin:5px;
+    background-color: #bddd86;
+    box-shadow: 3px 3px 3px rgb(95, 95, 95);
+}
+
+.card3 img {
+    margin: 50px 80px 50px 80px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card3 h2 {
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+}
+
+.card3 p {
+    width:80%;
+    margin:0px 30px 10px 30px;
+    font-family: helvetica;
+    align-items: center;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
 }
 
 footer {
@@ -237,8 +363,8 @@ footer img {
     margin: 5px;
     position: absolute;
     right: 0px;
-    height: 90px;
-    width: 87px;
+    height: 87px;
+    width: 84px;
 }
 
 .redessociais {
@@ -259,8 +385,8 @@ footer img {
 
 .redessociais img {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin: 5px;
     margin-top: 50px;
     left: 30px;
