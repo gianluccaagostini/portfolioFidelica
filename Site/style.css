@@ -1,0 +1,285 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Italiana', sans-serif;
+    /*font-family: 'Lexend Deca', sans-serif;*/
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*--------------------------------------------- Cabeçalho------------------------------------------------------- */
+
+.cabecalho {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    background-color: #2d2d2d;
+}
+
+.cabecalho img{
+    border-radius: 20px;
+    margin-bottom: 5px;
+    position: absolute;
+    right: 0px;
+    height: 120px;
+    width: 117px;
+}
+
+.cabecalho h1 {
+    margin-top: 42px;
+    width: 800px;
+    height: 49px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center; 
+    color:#FFFFFF;   
+}
+
+.dpmenu ul{
+    margin-left: 0px;
+    font-size: 14px;
+    list-style-type: none;
+    padding:0;
+    justify-content: right;
+
+}
+
+.dpmenu ul {
+    background-color:#2d2d2d; 
+}
+.dpmenu ul li {
+    display: inline-block;
+    position:relative;
+
+}
+
+.dpmenu ul li a {
+    color:hsl(0, 0%, 100%);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.dpmenu ul li a:hover {
+    background-color:hsl(0, 0%, 67%);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*---------------------------------Sub menu----------------------------------------------------*/
+
+.dpmenu ul ul{
+    display: none;
+    left: 0;
+    position: relative;
+}
+
+.dpmenu ul li:hover ul{
+    display: inline;
+}
+
+.dpmenu ul ul {
+    width: 150px;
+}
+
+.dpmenu ul ul li a{
+    display:inline;
+}
+
+
+/*---------------------------------------------------------- fim cabeçalho --------------------------------------*/
+
+.content {
+    margin-top: 50px;
+    padding: 20px;
+    display: block;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.content h1 {
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 905px;
+    height: 600px;
+    margin: 5px;
+    margin-left: 200px;
+    margin-bottom: 100px;;
+    border-radius: 20px;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    height: 580px;
+    margin: 6px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.sobrenos {
+    background-color: rgb(255, 255, 255);
+    width:905px;
+    height:600px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.sobrenos h2 {
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sobrenos p {
+    font-family: Helvetica;
+    font-style: normal;
+    line-height: 35px;
+    word-spacing: 8px;
+    align-items: center;
+    font-size: 20px;
+    text-align: justify-all;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    position: relative;
+    background-color: #2d2d2d;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+footer img {
+    border-radius: 20px;
+    margin: 5px;
+    position: absolute;
+    right: 0px;
+    height: 90px;
+    width: 87px;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.redessociais h3 {
+    font-size: 18px;
+    bottom: 10px;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+}
+
+.redessociais img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-top: 50px;
+    left: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    height: 85px;
+    font-size: 14px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 97px;
+    line-height: 25px;
+}
+
+.infos h3 {
+    margin-top: 10px;
+}
+
